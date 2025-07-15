@@ -1,21 +1,21 @@
+
 //Create custom type of Employee
 type Employee = {
-    fullName:[firstname:string, lastName:string],
+    fullName:[firstname:string,lastName:string],
     age: number,
     department: string, 
     skills:string[], 
     isActive:boolean
 };
 
-//Object creation of first employee
 let employee2 : Employee = {
     fullName: ["John","Doe"],
     age: 30,
-    department: "Enginnering",
+    department: "Engineering",
     skills:["Javascript", "Python", "C++"],
     isActive: true
 };
-//Object creation of second employee
+
 let employee3 : Employee = {
     fullName: ["Jane","Smith"],
     age: 25,
@@ -24,19 +24,18 @@ let employee3 : Employee = {
     isActive: false
 };
 
-//function creation
-function logEmployee(employee3 :Employee) : any {
-    console.log("---Employee Details---");
-    console.log(`Name: ${employee3.fullName}`);
+function logEmployee2(employee2 :Employee) : void {
     
-    console.log(`Name: ${employee3.fullName}`);
-    console.log(`Age: ${employee3.age}`);
+    console.log("---Employee Details---");
+    console.log(`Name: ${employee2.fullName[0]} ${employee2.fullName[1]}`);
 
-    console.log(`Department: ${employee3.department}`);  
-    console.log(`Skills: ${employee3.skills}`);
+    
+    console.log(`Age: ${employee2.age}`);
+    console.log(`Department: ${employee2.department}`);
+   
+    console.log(`Skills: ${employee2.skills.join(", ")}`);
 
-    console.log(`Active: ${employee3.isActive}`);
-    console.log(`-----------------------------`);
+    console.log(`Active: ${employee2.isActive}`);
 };
-//function call
-logEmployee(employee3);
+
+logEmployee2(employee2);
