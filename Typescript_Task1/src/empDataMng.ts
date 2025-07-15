@@ -27,12 +27,9 @@ let employee3 : Employee = {
 //function creation
 function logEmployee(employee3 :Employee) : any {
     console.log("---Employee Details---");
-    for(let a = 0; a < employee3.fullName.length -1; a++){
-        if((employee3.fullName[a]) ===","){
-             console.log(`Name: ${employee3.fullName}`);
-        }
-        console.log(`Name: ${employee3.fullName}`);
-    }
+    console.log(`Name: ${employee3.fullName}`);
+    
+    console.log(`Name: ${employee3.fullName}`);
     console.log(`Age: ${employee3.age}`);
 
     console.log(`Department: ${employee3.department}`);  
