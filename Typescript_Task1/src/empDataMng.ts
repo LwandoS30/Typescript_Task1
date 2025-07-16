@@ -35,7 +35,13 @@ function logEmployee2(employee2 :Employee) : void {
    
     console.log(`Skills: ${employee2.skills.join(", ")}`);
 
-    console.log(`Active: ${employee2.isActive}`);
+   if(employee2.isActive === true){
+        console.log(`Active: Yes`);
+    }
+    else{
+        console.log(`Active: No`);
+    }
+    console.log(`----------------------------------`);
 };
 
 logEmployee2(employee2);
