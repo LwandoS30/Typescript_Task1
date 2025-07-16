@@ -35,7 +35,7 @@ function logEmployee2(employee2 :Employee) : void {
    
     console.log(`Skills: ${employee2.skills.join(", ")}`);
 
-   if(employee2.isActive === true){
+    if(employee2.isActive === true){
         console.log(`Active: Yes`);
     }
     else{
